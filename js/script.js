@@ -58,10 +58,10 @@ const newSquadre = [];
 
 for (let i = 0; i < squadre.length; i++) {
     
-    squadre[i].puntiFatti = random();
-    squadre[i].puntiSubiti = random();
+    squadre[i].puntiFatti, squadre[i].puntiSubiti = random();
 
     let {nome,puntiSubiti} = squadre[i];
+    
     newSquadre.push({nome : nome, puntiSubiti : puntiSubiti});
     
 };
