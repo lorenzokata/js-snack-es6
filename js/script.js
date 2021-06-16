@@ -3,30 +3,31 @@
 const bici = [
 
     {
-        nome : 'pinarello',
+        nome : 'Pinarello',
         peso : 2,
     },
 
     {
-        nome : 'cross',
+        nome : 'Cross',
         peso : 5,
     },
 
     {
-        nome : 'mountain',
+        nome : 'Mountain',
         peso : 3,
     }
 ]
 
-let {peso} = bici[0];
+let {nome,peso} = bici[0];
 
 for (var i = 0; i < bici.length; i++) {
     
 
-    if (bici[i].peso < minimo) {
+    if (bici[i].peso < peso) {
         peso = bici[i].peso;
+        nome = bici[i].nome;
     }
     
 }
 
-console.log(peso);
+console.log(`La bici ${nome} é la piú leggera con soli ${peso}kg`);
