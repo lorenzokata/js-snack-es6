@@ -55,16 +55,15 @@ let squadre = [
 
 let random = () => Math.floor(Math.random() * 101);
 const newSquadre = [];
-let {nome,puntiSubiti} = squadre[0];
 
 for (let i = 0; i < squadre.length; i++) {
     
     squadre[i].puntiFatti = random();
     squadre[i].puntiSubiti = random();
 
-    newSquadre.push({nome : squadre[i].nome, puntiSubiti : squadre[i].puntiSubiti});
-    
+    let {nome,puntiSubiti} = squadre[i];
+    newSquadre.push({nome : nome, puntiSubiti : puntiSubiti});
     
 };
 
-// console.log(newSquadre);
+console.log(newSquadre);
