@@ -24,8 +24,8 @@ for (var i = 0; i < bici.length; i++) {
     
 
     if (bici[i].peso < peso) {
-        peso = bici[i].peso;
-        nome = bici[i].nome;
+        peso = bici[i];
+        nome = bici[i];
     }
     
 }
